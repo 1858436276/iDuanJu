@@ -13,7 +13,7 @@ android {
     namespace = "app.iduanju"
     compileSdk = 35
     defaultConfig {
-        applicationId = "app.iduanju"
+        applicationId = "app.yupeng521.top"
         minSdk = 26
         targetSdk = 35
         versionCode = 1635
