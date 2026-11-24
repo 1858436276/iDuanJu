@@ -142,6 +142,9 @@ struct SourcesView: View {
         case .xvideos: "HLS 自适应 + MP4 · 需代理"
         case .xnxx: "HLS 自适应 + MP4 · 需代理"
         case .pornhub: "HLS 1080P/720P/480P · 需代理"
+        case .youporn: "HLS + MP4 多画质 · 需代理"
+        case .redtube: "HLS + MP4 多画质 · 需代理"
+        case .hqporner: "MP4 多画质（mydaddy.cc 嵌入页）· 需代理"
         default: s.pluginID != nil ? "JS 插件 · " + (PluginStore.snapshot(s.pluginID!)?.manifest.httpDomains.first ?? "") :
                  s.cmsKey != nil ? "苹果 CMS 采集站 · " + (CMSStore.site(s.cmsKey!).flatMap { URL(string: $0.api)?.host } ?? "") : s.siteHost
         }
